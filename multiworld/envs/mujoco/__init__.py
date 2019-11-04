@@ -118,7 +118,7 @@ def register_mujoco_envs():
             hand_low=(-0.25, 0.3, 0.02),
             hand_high=(0.25, .8, 0.02),
             norm_order=2,
-            xml_path='sawyer_xyz/sawyer_push_box.xml',
+            xml_path='sawyer_xyz/test_mujoco.xml',
             reward_type='puck_success',
             reset_free=False,
             clamp_puck_on_step=False,

@@ -18,7 +18,7 @@ class SawyerMocapBase(MujocoEnv, Serializable, metaclass=abc.ABCMeta):
 
     def __init__(self, model_name, frame_skip=50):
         MujocoEnv.__init__(self, model_name, frame_skip=frame_skip)
-        self.reset_mocap_welds()
+        # self.reset_mocap_welds()
 
     def get_endeff_pos(self):
         return self.data.get_body_xpos('hand').copy()

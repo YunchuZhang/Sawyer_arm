@@ -4,7 +4,7 @@
     <include file="sawyer_xyz_base_pusher.xml" />
         <body name="puck" pos="0 0 0.1">
             <joint limited="false" name="puckjoint" type="free" />
-            <geom friction="0.35 0.25 .000001" mass="21" mesh="knife" name="puckbox" pos="0 0 0" rgba=".1 .1 .9 1" type="mesh" />
+            <geom friction="1.5 0.5 .000001" mass="2.7" mesh="mouse" name="puckbox" pos="0 0 0" rgba=".1 .1 .9 1" type="mesh" />
 
         </body>
 
@@ -13,5 +13,14 @@
         <site name="puck-goal-site" pos="0 0 0" rgba="0.5 0.5 1 0.5" size="0.01" />
         
   </worldbody>
+    <actuator>
+        <velocity ctrllimited="true" ctrlrange="-1.74 1.74" joint="right_j0" kv="8.0" name="vel_right_j0" />
+        <velocity ctrllimited="true" ctrlrange="-1.328 1.328" joint="right_j1" kv="7.0" name="vel_right_j1" />
+        <velocity ctrllimited="true" ctrlrange="-1.957 1.957" joint="right_j2" kv="6.0" name="vel_right_j2" />
+        <velocity ctrllimited="true" ctrlrange="-1.957 1.957" joint="right_j3" kv="4.0" name="vel_right_j3" />
+        <velocity ctrllimited="true" ctrlrange="-3.485 3.485" joint="right_j4" kv="2.0" name="vel_right_j4" />
+        <velocity ctrllimited="true" ctrlrange="-3.485 3.485" joint="right_j5" kv="0.5" name="vel_right_j5" />
+        <velocity ctrllimited="true" ctrlrange="-4.545 4.545" joint="right_j6" kv="0.1" name="vel_right_j6" />
+    </actuator>
     
 </mujoco>

@@ -104,7 +104,7 @@ Usage:
         </default>
     </default>
 
-    <equality>
+<!--     <equality>
         <weld body1="mocap" body2="hand" solref="0.01"></weld>
-    </equality>
+    </equality> -->
 </mujoco>
